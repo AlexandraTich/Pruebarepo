@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tich&Angel</title>
+    <link rel="stylesheet" href="./estilos.css/estilo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Cabecera y menú -->
+    <header class="cabecera">
+        <h1> Tich y Angel</h1>
+        <nav class="nav-menu">
+            <ul class="lista-menu">
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./pastelería.html">Pastelería </a></li>
+                <li><a href="./repostería.html">Repostería</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="contenedor1">
+        <!-- Contenedor aside -->
+        <aside class="contenedor">
+            <p class="parrafo1">
+                La Pastelería y repostería es el arte de preparar o decorar pasteles u otros postres. El término repostería es el que se utiliza para denominar al tipo de gastronomía que se basa en la preparación, y decoración de platos dulces tales como tartas, pasteles,
+                galletas, budines entre otros
+            </p>
+            <img class="imagenUno" src="./imagenes/imagen1.jpg" alt="imagen1">
+        </aside>
+        <!-- contenedor de imagenes -->
+        <div class="contenedor2">
+            <section class="seccion1">
+                <p class="parrafo2">
+                    En nuestra pastelería encontrarás los mejores postres y pasteles que se encuentran en la ciudad de Bogotá, <br> somos la marca número 1 del gran consurso ¡pateleríaGold!!, evento que se celebró el pasado 20 de Octubre <br> de 2020,
+                    lo cual certifica la calidad de nuestros postres. A continuación encontrarás diferentes demostraciones <br> de los exiquisitos productos. <br>
+                    <br>
+                </p>
+                <img onclick="postreNavideño()" class="imagen" src="./imagenes/imagen2.jpg" alt="imagen2">
+                <img onclick="postreFresa()" class="imagen" src="./imagenes/imagen3.jpg" alt="imagen3">
+                <img onclick="Cheesecake()" class="imagen" src="./imagenes/imagen4.jpg" alt="imagen4">
+            </section>
+        </div>
+    </div>
+    <!-- Formulario para contactar -->
+    <footer>
+        <hr>
+        <p>Si quieres ser parte de nuestra familia, en la sección de decoración pastelera, ingresa los siguientes datos <br> Nosotros te contactamos!!!</p>
+        <div class="inscripción">
+            <form class="formulario" action="">
+                <label for="nombre">Escriba su nombre</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Escriba su nombre" required>
+                <br><br>
+                <label for="correo">Ingrese su correo</label>
+                <input type="email" id="correo" name="correo" placeholder="Ingrese su correo" required>
+                <br><br>
+                <input type="submit" onclick="contactar()" value="Unete a nosotros">
+
+            </form>
+        </div>
+        <p class="origen"> <b> Creado por Alexandra Arismendi </b></p>
+    </footer>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="./javaScript/evento.js"></script>
+</body>
+
+</html>
